@@ -63,8 +63,8 @@ function timer() {
 	setInterval(() => {
 		seconds--
 		timerElement.innerText = seconds
-		if (seconds <= 0)
-			NextQuote()
+		// if (seconds <= 0)
+		// 	NextQuote()
 	}, 1000)
 }
 
