@@ -21,21 +21,29 @@ body, .text-input {
     width: 700px;
     max-width: 90%;
     border-radius: .5rem;
+
 }
 
-.timer {
-    position: absolute;
+.index {
     top:  2rem;
     font-size: 3rem;
     color: cadetblue;
     font-weight: bold;
 }
 
+.flex-box{
+    position: absolute;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: nowrap;
+    top: 2rem;
+    width: 900px;
+}
+
 .text {
     margin-bottom: 1rem;
     margin-left: calc(1rem + 2px) ;
     margin-right: calc(1rem + 2px) ;
-    
 }
 
 .text-input {
