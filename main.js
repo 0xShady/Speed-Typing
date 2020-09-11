@@ -57,28 +57,28 @@ async function NextQuote() {
 	timer()
 }
 
-let starTime
-function timer() {
-	starTime = new Date()
-	setInterval(() => {
-		seconds--
-		timerElement.innerText = seconds
-		// if (seconds <= 0)
-		// 	NextQuote()
-	}, 1000)
-}
-
-// let startTime
+// let starTime
 // function timer() {
-// 	timerElement.innerText = 0
-// 	startTime = new Date()
+// 	starTime = new Date()
 // 	setInterval(() => {
-// 		timer.innerText = getTimerTime()
+// 		seconds--
+// 		timerElement.innerText = seconds
+// 		if (seconds <= 0)
+// 			NextQuote()
 // 	}, 1000)
 // }
 
-// function getTimerTime() {
-// 	return Math.floor((new Date() - startTime) / 1000)
-// }
+let startTime
+function timer() {
+	timerElement.innerText = 0
+	startTime = new Date()
+	setInterval(() => {
+		timerElement.innerText = getTimerTime()
+	}, 1000)
+}
+
+function getTimerTime() {
+	return Math.floor((new Date() - startTime) / 1000)
+}
 
 NextQuote()
